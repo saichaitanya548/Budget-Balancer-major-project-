@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salary Budget Balancing</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    header {
+    position: fixed;
+    top: 44px;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+  margin-top: -49px;
+  margin-left: -115px;
+    font-size: 2em;
+    color: #090808;
+    user-select: none;
+}
+nav{
+  color: #20B2AA;
+}
+
+.navigation a {
+  
+    position: relative;
+    font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #0a0909;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #191515;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #160e0e;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #0c0b0b;
+    color: #3279af;
+}
+
+
+    /* Custom CSS */
+
+    /* Style for the website name */
+    .navbar-brand {
+      font-size: 2rem; /* Increase font size */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+    }
+
+    /* Center the website name */
+    .navbar-brand {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    a.nav-link:hover{
+      text-decoration: underline;
+      text-shadow: #20B2AA;
+      float:left;
+    
+    }
+    .nav-item a:hover{
+      color:aqua;
+    }
+    
+    /* Special effects for the website name within the container */
+    .jumbotron .container .navbar-brand {
+      color: #fff; /* Text color */
+      font-size: 3.5rem; /* Increase font size */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+      margin-bottom: 20px; /* Add spacing below the website name */
+      animation: glow 2s infinite alternate; /* Add animation */
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: none;
+      }
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #33ccff, 0 0 40px #33ccff, 0 0 50px #33ccff, 0 0 60px #33ccff, 0 0 70px #33ccff, 0 0 80px #33ccff;
+      }
+    }
+
+    /* Style for the jumbotron */
+    .jumbotron {
+      background: url('your-background-image.jpg') no-repeat center center fixed; /* Replace 'your-background-image.jpg' with your actual image */
+      background-size: cover;
+      color: #fff; /* Text color */
+      text-align: center;
+      padding: 100px 0; /* Adjust as needed */
+    }
+
+    /* Style for the main heading */
+    .display-4 {
+      font-weight: bold; /* Increase font weight */
+      color: #33ccff; /* Change text color */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+    }
+
+    /* Style for the main heading's description */
+    .lead {
+      font-size: 1.25rem; /* Increase font size */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+    }
+
+    /* Style for the main call-to-action button */
+    .btn-primary {
+      text-shadow: none; /* Remove text shadow */
+      border-radius: 25px; /* Round corners */
+    }
+
+    /* Style for the columns */
+    .col-md-4 {
+      margin-bottom: 30px; /* Add spacing between columns */
+    }
+
+    /* Style for the feature headings */
+    h2 {
+      font-weight: bold; /* Increase font weight */
+    }
+
+    /* Style for the feature descriptions */
+    p {
+      font-size: 1.1rem; /* Increase font size */
+    }
+    .m img:hover{
+      height:50%;
+      width:50%;
+
+
+    }
+    
+    /* Preloader Styles */
+    #preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 9999;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      background: #fff url('walk.gif') no-repeat center center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <a class="navbar-brand" href="#">Budget Balancing</a>
+  <center>
+    <header>
+      <h4 class="logo"><img src="logo.png" width="150px" height="150px">Budget_Balancer</h4>
+      <nav class="navigation">
+          <a href="#">Home</a>
+          <a href="about.html">About</a>
+          <a href="service.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <button class="btnLogin-popup" >Login</button>
+          
+      </nav>
+  </header>
+</center>
+  
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Balance <span style="color:#FF6347">Your</span> <span style="color:#20B2AA">Salary</span></h1>
+      <p class="lead">Manage your income effectively by splitting it into expenditures, savings, and paying off debts.</p>
+      <a class="btn btn-primary btn-lg" href="service.html" target="_blank" role="button">Get Started</a>
+    </div>
+  </div>
+  
+  <center><div class="m"><img src="./mainimg.jpg" alt="img not found" width="500" height="300"></div></center>
+       <br>
+       <br>
+       <center>
+       <h2> EMERGENCY FUNDS :-</h2>
+         <p>   emergency funding means backup money for the future uses in emergency</P>
+         <P>     situations the emergency funds must be atleast the 6 months expenses of our households
+         </p></div>
+         <h1>where to keep emergency funds safe </h1>
+         <h3> liquid funds: </h3>
+         <P>   It is better than savings account because interest rates greater</P>
+        <P>   than savings account and easy to withdraw and money grow according
+          to the INFLATION </P></div></center>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Expenditures</h2>
+        <p>Track and manage your daily expenses.</p>
+      </div>
+      <div class="col-md-4">
+        <h2>Savings</h2>
+        <p>Plan for your future by setting aside a portion of your income.</p>
+      </div>
+      <div class="col-md-4">
+        <h2>EMIs & Debts</h2>
+        <p>Stay on top of your loans and debts to achieve financial freedom.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+ 

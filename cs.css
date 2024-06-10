@@ -1,0 +1,57 @@
+/* Custom CSS */
+
+/* Style for the website name */
+.navbar-brand {
+    font-size: 2rem; /* Increase font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  }
+  
+  /* Center the website name */
+  .navbar-brand {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Style for the jumbotron */
+  .jumbotron {
+    background: url('your-background-image.jpg') no-repeat center center fixed; /* Replace 'your-background-image.jpg' with your actual image */
+    background-size: cover;
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 100px 0; /* Adjust as needed */
+  }
+  
+  /* Style for the main heading */
+  .display-4 {
+    font-weight: bold; /* Increase font weight */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  }
+  
+  /* Style for the main heading's description */
+  .lead {
+    font-size: 1.25rem; /* Increase font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  }
+  
+  /* Style for the main call-to-action button */
+  .btn-primary {
+    text-shadow: none; /* Remove text shadow */
+    border-radius: 25px; /* Round corners */
+  }
+  
+  /* Style for the columns */
+  .col-md-4 {
+    margin-bottom: 30px; /* Add spacing between columns */
+  }
+  
+  /* Style for the feature headings */
+  h2 {
+    font-weight: bold; /* Increase font weight */
+  }
+  
+  /* Style for the feature descriptions */
+  p {
+    font-size: 1.1rem; /* Increase font size */
+  }
+  

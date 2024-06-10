@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About Us card || Learning robo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="ab.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <script>
+            function goBack() {
+              window.location.href = 'mypro.html';
+            }
+        </script>
+        <style>
+            #preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 9999;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      background: #fff url('walk.gif') no-repeat center center;
+    }
+        </style>
+    </head>
+    <body>
+        <div id="preloader"></div>
+        <button id="mybutton" onclick="goBack()">Go Back</button>
+        <section>
+            <div class = "image">
+               <img src="https://cdn.pixabay.com/photo/2017/08/26/23/37/business-2684758__340.png">
+            </div>
+
+            <div class = "content">
+                <h2>About Us</h2>
+                <span><!-- line here --></span>
+                <p>Budget Analysis: Analyzing a budget involves examining how it is planned, executed, and monitored. 
+                    It helps identify strengths, weaknesses, opportunities, and threats related to financial planning.
+                     Key aspects include accountability, transparency, decision-making, and learning from experiences1.
+                    Investment Suggestions: To provide investment recommendations, we need to consider factors like risk tolerance, financial goals, and investment horizon. I recommend exploring investment platforms that align with your preferences and risk appetite.</p>
+                <ul class = "links">
+                    <li><a href = "mypro.html">work</a></li>
+                    <div class = "vertical-line"></div>
+                    <li><a href = "service.html">service</a></li>
+                    <div class = "vertical-line"></div>
+                    <li><a href = "contact.html">contact</a></li>
+                </ul>
+                <ul class = "icons">
+                    <li>
+                        <i class = "fa-fa-twitter"></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-facebook"></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-github"></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-pinterest"></i>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="credit">Made with <span style="color:tomato">❤</span> by <a href="https://www.linkedin.com">pavan,chaitanya</a></div>
+    <script>
+        // script.js (or a separate JavaScript file)
+function animateImage() {
+    const image = document.querySelector('.image img'); // Get the image element
+    let positionX = 0; // Initial X position
+
+    const animationInterval = setInterval(frame, 10); // Adjust the interval as needed
+
+    function frame() {
+        if (positionX >= 300) {
+            clearInterval(animationInterval); // Stop the animation when desired position is reached
+        } else {
+            positionX++; // Increment X position (adjust as needed)
+            image.style.transform = `translateX(${positionX}px)`; // Move the image horizontally
+        }
+    }
+}
+
+// Call the animation function when the page loads
+window.onload = animateImage;
+
+    </script>
+    <script>
+        // Hide the preloader after 5 seconds
+        window.addEventListener('load', function () {
+          setTimeout(function () {
+            document.getElementById('preloader').style.display = 'none';
+          }, 1000); // 5000ms = 5s
+        });
+      </script>
+    </body>
+</html>

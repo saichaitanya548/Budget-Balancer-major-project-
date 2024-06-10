@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 200vh; /* To enable scrolling */
+    overflow-x: hidden;
+}
+
+.parallax {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/mnt/data/2304.w026.n002.3502B.p1.3502.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 1;
+}
+
+.moon {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background: url('moon.png') no-repeat center center;
+    background-size: cover;
+}
+
+.content {
+    position: relative;
+    height: 100vh;
+    background: #fff;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.thank-you-message {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(7, 233, 240, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.thank-you-message h2 {
+    margin: 0 0 10px;
+}
+
+.thank-you-message p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .thank-you-message {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .thank-you-message h2 {
+        font-size: 1.5rem;
+    }
+
+    .thank-you-message p {
+        font-size: 1rem;
+    }
+}

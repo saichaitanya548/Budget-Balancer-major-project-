@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Deposit Investment</title>
+    <style>
+        body {
+            backdrop-filter: blur(4px);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+            background: linear-gradient(135deg, #f3f7f3 25%, #e2e8e57a 100%);
+            overflow-x: hidden;
+            background-image: url("fixed.jpg");
+            background-size: cover;
+           
+        }
+        .container {
+            backdrop-filter: blur(5px);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.091);
+            border-radius: 10px;
+            margin-top: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+            background-image: linear-gradient(to right, #00ffd5, #00BFFF);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            transition: background-position 0.3s;
+            background-size: 200% auto;
+            cursor: pointer;
+        }
+        h1:hover {
+            background-position: right center;
+        }
+        h1::after {
+            content: '';
+            width: 100%;
+            height: 4px;
+            background-color: #333;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 5px;
+            background-image: linear-gradient(to right, #007BFF, #00BFFF);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            transition: background-position 0.3s;
+            background-size: 200% auto;
+            cursor: pointer;
+        }
+        h2:hover {
+            background-position: right center;
+        }
+        h2::after {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background-color: #333;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        .bank-type {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .bank {
+            backdrop-filter: blur(0px);
+            background-color: #f9f9f900;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 1.1);
+            width: 300px;
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .bank:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .bank h3 {
+            color:chocolate;
+            margin-bottom: 10px;
+        }
+        .bank ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+        .bank li {
+            color:#000000;
+            font-weight: bolder;
+            margin-bottom: 5px;
+        }
+        .bank .interest-rate {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .bank .interest-rate span {
+            color: #007BFF;
+        }
+        button {
+            background-color: #0074D9;
+            color: white;
+            border: none;
+            padding: 1%;
+            margin-left: 90%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+     
+        
+        }
+        
+        
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        #preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 9999;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      background: #fff url('walk.gif') no-repeat center center;
+    }
+  </style>
+  
+  <script>
+    function goBack() {
+        window.history.back();
+    }
+   
+        
+</script>
+   
+</head>
+  
+<body>
+    <div id="preloader"></div>
+    <button id="mybutton" onclick="goBack()">Go Back</button>
+    <div class="container">
+        <h1>Fixed Deposit Investment</h1>
+        
+        <div class="section">
+            <h2>Insurance Coverage for Deposits up to 5 Lakhs</h2>
+            <p>Fixed deposits up to 5 lakhs in all accounts of an individual are insured by the Deposit Insurance and Credit Guarantee Corporation (DICGC).</p>
+        </div>
+        
+        <div class="section">
+            <h2>Types of Banks</h2>
+            <div class="bank-type">
+                <div class="bank">
+                    <h3>Nationalized Banks</h3>
+                    <ul>
+                        <li>State Bank of India</li>
+                        <li>Interest Rate for 1 Year: 5.0%</li>
+                        <li>Interest Rate for 2 Years: 5.5%</li>
+                        <li>Interest Rate for 3 Years: 6.0%</li>
+                        <li>Interest Rate for 5 Years: 6.5%</li>
+                    </ul>
+                </div>
+                <div class="bank">
+                    <h3>Private Banks</h3>
+                    <ul>
+                        <li>HDFC Bank</li>
+                        <li>Interest Rate for 1 Year: 5.5%</li>
+                        <li>Interest Rate for 2 Years: 6.0%</li>
+                        <li>Interest Rate for 3 Years: 6.5%</li>
+                        <li>Interest Rate for 5 Years: 7.0%</li>
+                    </ul>
+                </div>
+                <div class="bank">
+                    <h3>Small Banks</h3>
+                    <ul>
+                        <li>Ujjivan Small Finance Bank</li>
+                        <li>Interest Rate for 1 Year: 6.0%</li>
+                        <li>Interest Rate for 2 Years: 6.5%</li>
+                        <li>Interest Rate for 3 Years: 7.0%</li>
+                        <li>Interest Rate for 5 Years: 7.5%</li>
+                    </ul>a
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Hide the preloader after 5 seconds
+        window.addEventListener('load', function () {
+          setTimeout(function () {
+            document.getElementById('preloader').style.display = 'none';
+          }, 1000); // 5000ms = 5s
+        });
+      </script>
+</body>
+</html>

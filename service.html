@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salary Budget Balancing</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom CSS */
+
+    /* Style for the grid container */
+    h3{
+      color: #fffcfc;
+    }
+    
+    .grid-container {
+      margin-top: 50px;
+    }
+
+    /* Style for the grid boxes */
+    .grid-box {
+      margin-top: -75px;
+      padding: 50px;
+      border: 1px solid #ccc;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-bottom: 246px; /* Add margin between boxes */
+      width: 343px; /* Set width */
+      height: 156px; /* Set height */
+    }
+
+    /* Hover effect */
+    .grid-box:hover {
+      background-color: #f0f0f0;
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, 0.5); 
+      border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+    .bg-video {
+    position: fixed;
+    right: 2px;
+    bottom:0px;
+    min-width: 100%; 
+    min-height: 50%;
+    z-index: -1;
+    object-fit: cover;
+    object-position: 50%;
+    }
+
+    .jumbotron{
+      background: #cccccc00;
+      margin-top: -52px;
+    }
+    .jumbotron .container  {
+      background-color: #cccccc00;
+      color: #fffffff8; /* Text color */
+      font-size: 3.5rem; /* Increase font size */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+      margin-bottom: 20px; /* Add spacing below the website name */
+      animation: glow 2s infinite alternate; /* Add animation */
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: none;
+      }
+      to {
+        text-shadow: 0 0 20px #ffffff0d, 0 0 30px #12d9d9, 0 0 40px #ececec, 0 0 50px #05b9e6, 0 0 60px #0ae3ad, 0 0 70px #d704e2, 0 0 80px #33ccff;
+      }}
+      button {
+            background-color: #0074D9;
+            color: white;
+            border: none;
+            padding: 1%;
+            margin-left: 90%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+     
+        
+        }
+        
+        
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        #preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 9999;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      background: #fff url('walk.gif') no-repeat center center;
+    }
+  </style>
+  
+  <script>
+    function goBack() {
+      window.location.href = 'mypro.html';
+    }
+</script>
+</head>
+<body>
+  <div id="preloader"></div>
+  <button id="mybutton" onclick="goBack()">Go Back</button>
+  <div class="jumbotron">
+    <div class="container">
+  <Center><h1>MONTHLY INCOME SLABS</h1></Center></div>
+  <marquee style="color: #f0f0f0;"> splitting the home total income into daily needs and savings</marquee>
+</div>
+  
+  <div class="container grid-container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="grid-box" onclick="window.location.href='page1.html';">
+          <h3>LESS THAN 30K</h3>
+         
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="grid-box" onclick="window.location.href='page2.html';">
+          <h3>INCOME 30 TO 50K</h3>
+          
+        </div>
+        
+      </div>
+      <div class="col-md-4">
+        <div class="grid-box" onclick="window.location.href='page3.html';">
+          <h3> INCOME 50 TO 75K</h3>
+         
+        </div>
+      </div>
+    </div>
+   
+    <div class="row">
+      <div class="col-md-4">
+        <div class="grid-box" onclick="window.location.href='page4.html';">
+          <h3>INCOME 75K TO 1LAKH</h3>
+          
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="grid-box" onclick="window.location.href='page5.html';">
+          <h3>1 LAKH TO 1.5LAKH</h3>
+          
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="grid-box" onclick="window.location.href='page6.html';">
+          <h3>1.5LAKH TO 2LAKH</h3>
+          
+      </div>
+    </div>
+  </div>
+  <video  autoplay loop muted class="bg-video">
+    <source src="vid.mp4" type="video/mp4">
+    Your browser does not support the video tag
+</video>
+<script>
+  // Hide the preloader after 5 seconds
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      document.getElementById('preloader').style.display = 'none';
+    }, 1000); // 5000ms = 5s
+  });
+</script>
+
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

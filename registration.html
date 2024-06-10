@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website With Login & Registration | Codehal</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <header>
+        <h4 class="logo">Budget_Balancer</h4>
+        <nav class="navigation">
+            <a href="mypro.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <button class="btnLogin-popup" >Register</button>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login active">
+          <center><h3>Register</h3></center>
+            <form action="login.html">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-circle"></ion-icon></span>
+                    <input type="text" required>
+                    <label>FirstName</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>LastName</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="call"></ion-icon></span>
+                    <input type="number" required>
+                    <label>PhoneNumber</label>
+                </div>
+                <center><h5>Or</h5>
+               <div class="acc">
+               <a href="https://accounts.google.com/signin/oauth/oauthchooseaccount?checkedDomains=youtube&client_id=364249790788-ts76onaje3pfh86llcpjs5gkutiiupbs.apps.googleusercontent.com&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hANzxgV9NyewLYMYBu2yIbvfXLknaurgB8zzR7Y4e52yjsWOoCPhcgwtEtbvFRTjiOw2xxrrWI0nrUuaco4DQiOa2C6b-zNV0KL73c5mkwccGNG85vrCueaX7kNERbcmEXkwvihf4A_fM5niRs3nIPz2HZjE9M8O9T6SOX7ZCaHokdtHhgs_I5Tpn6UJmLozR8MYySbM47XqgJ8iy9shTUwvGgHysFWN5GCK_-WhDbE-PIUgbdCzo1XhM5kwmJphUkGYl7ysHVojIVLIE6JfBtFXN3tfQWRm4WtN07LnqeiG8JQExFALSn3wSERdDxhLKpqKPUSYFdXskA1xTO8fvToAObnECY0OkYswnJGW8_n_EF9hVffN597GOPglq6mXf2DqRQM0l2kRWp2tHw-wfETpsUUTso1O31MPIOOnFvv5iscHzi-ucvh7F9TwV0EppGNecZZjxxWc4aN6qss4RTteT54NXA%26flowName%3DGeneralOAuthFlow%26as%3DS1929567528%253A1716654262325072%26client_id%3D364249790788-ts76onaje3pfh86llcpjs5gkutiiupbs.apps.googleusercontent.com%23&ddm=0&flowName=GeneralOAuthFlow&hl=en_GB&o2v=1&redirect_uri=https%3A%2F%2Fideogram.ai%2F__%2Fauth%2Fhandler&response_type=code&scope=openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20profile&service=lso&state=AMbdmDlB-OK09Z4SXdE0TRjGTcqz3Ipuawr8Ntko2b1n82cuFDxSVJHfUckoJipPKdMSwmbX-VQFkrlNbBMZzK25nxeJPNNbR3x6EHxquamE8wiU53PXPwt31NjLc3nZ23dGkTv0Jv25O4wawuVzPYYNwXSeZy5aCkOH9DF9WUZkp-97oBmKKju4quq0fwYxTjKv-EcykcoqqD2VGVNyirxRLdImelpJ6wHchRN0w0g1QDzNGAKjVlgwWxva2q6XKo1YWl8SwSG-lthFRNFuBzNV6r7T4Y33flCEtEeenYUKlbaaNDc"><ion-icon name="logo-google"></ion-icon></a>
+                    
+                <a href="https://www.facebook.com/business/ads-guide/update?content_id=nAtzmx45hxUTFAr&ref=sem_smb&utm_term=dat-2335775014494062%3Aloc-90&gclid=f99ff673848b176772b1901070e31c10&msclkid=f99ff673848b176772b1901070e31c10"><ion-icon name="logo-facebook"></ion-icon></a>
+                       
+                <a  id="p" href="https://appleid.apple.com/account"> <ion-icon name="logo-apple"></ion-icon></a></div></center>
+                <form action="login.html">
+                <button type="submit" class="btn">Register</button></form>
+                <div class="login-register">
+                    <p>Do u have an account? <a href="login.html" class="register-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        // Hide the preloader after 5 seconds
+        window.addEventListener('load', function () {
+          setTimeout(function () {
+            document.getElementById('preloader').style.display = 'none';
+          }, 3000); // 5000ms = 5s
+        });
+       
+      </script>
+      
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   
+</body>
+
+</html>

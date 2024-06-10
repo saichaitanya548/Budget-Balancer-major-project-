@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low-Risk SIP Investment Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: linear-gradient(135deg, #f3f4f7 25%, #e2e3e8 100%);
+            overflow-x: hidden;
+            background-image: url("mutual.jpg");
+            background-size: cover;
+            
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.059);
+            border-radius: 10px;
+            margin-top: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        h1::after {
+            content: '';
+            width: 100%;
+            height: 4px;
+            background-color: #333;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+        }
+        .fund-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .fund {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+            color: #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #f9f9f9;
+            cursor: pointer;
+            position: relative;
+        }
+        .fund::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            transition: opacity 0.3s;
+            opacity: 0;
+            box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
+        }
+        .fund:hover::after {
+            opacity: 1;
+        }
+        .fund:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 1.1);
+        }
+        .liquid-fund {
+            background-color: #a0eacb00;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .hybrid-fund {
+            background-color: #a8d6f600;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .arbitrage-fund {
+            background-color: #d3b6e800;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .overnight-fund {
+            background-color: #f5c8a406;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .treasury-fund {
+            background-color: #b7e5b000;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 6px 12px rgba(187, 23, 23, 0);
+        }
+        .money-market-fund {
+            background-color: #f7a8a800;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .liquid-fund:hover{
+            background-color: #4ee7a7e3;
+        }
+        .hybrid-fund:hover{
+            background-color: #a8d5f6;
+        }
+        .arbitrage-fund:hover{
+            background-color: #d3b6e8;
+        }
+        .overnight-fund:hover{
+            background-color: #f5c9a4;
+        }
+        .treasury-fund:hover{
+            background-color: #40d6ffbd;
+        }
+        .money-market-fund:hover {
+            background-color: #f7a8a8;
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        p {
+            margin: 5px 0;
+        }
+        .risk, .cagr {
+            font-weight: bold;
+        }
+        .companies {
+            font-style: italic;
+        }
+        @media (max-width: 768px) {
+            .fund {
+                width: 80%;
+                margin: 10px 0;
+            }
+        }
+        button {
+            background-color: #0074D9;
+            color: white;
+            border: none;
+            padding: 1%;
+            margin-left: 90%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+     
+        
+        }
+        
+        
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        #preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 9999;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      background: #fff url('walk.gif') no-repeat center center;
+    }
+  </style>
+  
+  <script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+</head>
+<body>
+    <div id="preloader"></div>
+    <button id="mybutton" onclick="goBack()">Go Back</button>
+    <div class="container">
+        <h1>Low-Risk SIP Investment Options</h1>
+        <div class="fund-container">
+            <div class="fund liquid-fund">
+                <h2>Debt Mutual Funds - Liquid Funds</h2>
+                <p><span class="cagr">CAGR:</span> 4-6% over the past 5 years</p>
+                <p><span class="risk">Risk:</span> Low interest rate and credit risk</p>
+                <p class="companies">Companies: 
+                    <br>HDFC Liquid Fund - <span class="cagr">CAGR:</span> 5.3%, <span class="risk">Risk:</span> Low
+                    <br>ICICI Prudential Liquid Fund - <span class="cagr">CAGR:</span> 5.1%, <span class="risk">Risk:</span> Low
+                </p>
+            </div>
+            <div class="fund hybrid-fund">
+                <h2>Hybrid Mutual Funds</h2>
+                <p><span class="cagr">CAGR:</span> 7-10% over the past 5 years</p>
+                <p><span class="risk">Risk:</span> Moderate, balanced between equity market volatility and bond stability</p>
+                <p class="companies">Companies: 
+                    <br>DSP Dynamic Asset Allocation Fund - <span class="cagr">CAGR:</span> 8.5%, <span class="risk">Risk:</span> Moderate
+                    <br>HSBC Balanced Advantage Fund - <span class="cagr">CAGR:</span> 7.9%, <span class="risk">Risk:</span> Moderate
+                </p>
+            </div>
+            <div class="fund arbitrage-fund">
+                <h2>Arbitrage Funds</h2>
+                <p><span class="cagr">CAGR:</span> 6.4-6.7% over the past 3 years</p>
+                <p><span class="risk">Risk:</span> Very low, exploiting arbitrage opportunities</p>
+                <p class="companies">Companies: 
+                    <br>Invesco India Arbitrage Fund - <span class="cagr">CAGR:</span> 6.5%, <span class="risk">Risk:</span> Very low
+                    <br>Tata Arbitrage Fund - <span class="cagr">CAGR:</span> 6.4%, <span class="risk">Risk:</span> Very low
+                </p>
+            </div>
+            <div class="fund overnight-fund">
+                <h2>Overnight Funds</h2>
+                <p><span class="cagr">CAGR:</span> 5.4-6.9% over the past 1-3 years</p>
+                <p><span class="risk">Risk:</span> Very low, investing in overnight securities</p>
+                <p class="companies">Companies: 
+                    <br>Bank of India Overnight Fund - <span class="cagr">CAGR:</span> 5.8%, <span class="risk">Risk:</span> Very low
+                    <br>Mirae Asset Overnight Fund - <span class="cagr">CAGR:</span> 6.2%, <span class="risk">Risk:</span> Very low
+                </p>
+            </div>
+            <div class="fund treasury-fund">
+                <h2>Treasury Securities</h2>
+                <p><span class="cagr">CAGR:</span> 2-4% depending on the type</p>
+                <p><span class="risk">Risk:</span> Very low, government-backed</p>
+                <p class="companies">Companies: 
+                    <br>Treasury Bills (T-Bills) - <span class="cagr">CAGR:</span> 3.5%, <span class="risk">Risk:</span> Very low
+                    <br>Treasury Bonds - <span class="cagr">CAGR:</span> 2.8%, <span class="risk">Risk:</span> Very low
+                </p>
+            </div>
+            <div class="fund money-market-fund">
+                <h2>Money Market Funds</h2>
+                <p><span class="cagr">CAGR:</span> 3-4% over the past 5 years</p>
+                <p><span class="risk">Risk:</span> Very low, with high liquidity and stability</p>
+                <p class="companies">Companies: 
+                    <br>HDFC Money Market Fund - <span class="cagr">CAGR:</span> 3.7%, <span class="risk">Risk:</span> Very low
+                    <br>SBI Money Market Fund - <span class="cagr">CAGR:</span> 3.6%, <span class="risk">Risk:</span> Very low
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Hide the preloader after 5 seconds
+        window.addEventListener('load', function () {
+          setTimeout(function () {
+            document.getElementById('preloader').style.display = 'none';
+          }, 1000); // 5000ms = 5s
+        });
+      </script>
+</body>
+</html>

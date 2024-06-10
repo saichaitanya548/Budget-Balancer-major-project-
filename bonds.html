@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Bonds and Their Benefits</title>
+    <style>
+        body {
+            backdrop-filter: blur(5px);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: linear-gradient(135deg, #f3f4f773 25%, #e2e3e86c 100%);
+            overflow-x: hidden;
+            background-image: url("bonds.jpg");
+            background-size: cover;
+            border-radius: 10pxS;
+            
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.068);
+            border-radius: 17px;
+            margin-top: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        h1::after {
+            content: '';
+            width: 100%;
+            height: 4px;
+            background-color: #333;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+        }
+        .bond-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .bond {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+            color: #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #f9f9f9;
+            cursor: pointer;
+            position: relative;
+        }
+        .bond::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            transition: opacity 0.3s;
+            opacity: 0;
+            box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
+        }
+        .bond:hover::after {
+            opacity: 1;
+        }
+        .bond:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .government-bond {
+            background-color: #a0eacb;
+        }
+        .corporate-bond {
+            background-color: #a8d5f6;
+        }
+        .municipal-bond {
+            background-color: #d3b6e8;
+        }
+        .savings-bond {
+            background-color: #f5c9a4;
+        }
+        .investment-grade-bond {
+            background-color: #b7e5b0;
+        }
+        .junk-bond {
+            background-color: #f7a8a8;
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        p {
+            margin: 5px 0;
+        }
+        .risk, .cagr {
+            font-weight: bold;
+        }
+        .companies {
+            font-style: italic;
+        }
+        @media (max-width: 768px) {
+            .bond {
+                width: 80%;
+                margin: 10px 0;
+            }
+        }
+        .bond:hover .content {
+            display: block;
+        }
+        .content {
+            display: none;
+            text-align: left;
+            margin-top: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #0074D9;
+            color: white;
+            border: none;
+            padding: 1%;
+            margin-left: 90%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+     
+        
+        }
+        
+        
+
+        button:hover {
+            background-color: #0056b3;
+        }
+      
+            #preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 9999;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      background: #fff url('walk.gif') no-repeat center center;
+    }
+     
+    </style>
+    
+  <script>
+    function goBack() {
+        window.history.back();
+    }
+   
+        
+</script>
+</head>
+<body >
+    <div id="preloader"></div>
+    <button id="mybutton" onclick="goBack()">Go Back</button>
+    <div class="container">
+        <h1>Types of Bonds and Their Benefits</h1>
+        <div class="bond-container">
+            <div class="bond government-bond">
+                <h2>Government Bonds</h2>
+                <p>Government bonds are low-risk investments backed by the government.</p>
+                <div class="content">
+                    <p><span class="cagr">CAGR:</span> 2-4% depending on the type (2018-2023)</p>
+                    <p><span class="risk">Risk:</span> Very low</p>
+                    <p class="companies">Examples:
+                        <br>US Treasury Bonds - <span class="cagr">CAGR:</span> 3.5%, <span class="risk">Risk:</span> Very low
+                        <br>UK Gilts - <span class="cagr">CAGR:</span> 2.8%, <span class="risk">Risk:</span> Very low
+                    </p>
+                </div>
+            </div>
+            <div class="bond corporate-bond">
+                <h2>Corporate Bonds</h2>
+                <p>Corporate bonds are issued by companies and offer higher returns than government bonds.</p>
+                <div class="content">
+                    <p><span class="cagr">CAGR:</span> 4-6% over the past 5 years (2018-2023)</p>
+                    <p><span class="risk">Risk:</span> Low to moderate</p>
+                    <p class="companies">Examples:
+                        <br>Apple Inc. Bonds - <span class="cagr">CAGR:</span> 5.1%, <span class="risk">Risk:</span> Low
+                        <br>Microsoft Corp. Bonds - <span class="cagr">CAGR:</span> 5.3%, <span class="risk">Risk:</span> Low
+                    </p>
+                </div>
+            </div>
+            <div class="bond municipal-bond">
+                <h2>Municipal Bonds</h2>
+                <p>Municipal bonds are issued by local governments and offer tax advantages.</p>
+                <div class="content">
+                    <p><span class="cagr">CAGR:</span> 3-5% over the past 5 years (2018-2023)</p>
+                    <p><span class="risk">Risk:</span> Low</p>
+                    <p class="companies">Examples:
+                        <br>California GO Bonds - <span class="cagr">CAGR:</span> 4.0%, <span class="risk">Risk:</span> Low
+                        <br>New York City Bonds - <span class="cagr">CAGR:</span> 3.8%, <span class="risk">Risk:</span> Low
+                    </p>
+                </div>
+            </div>
+            <div class="bond savings-bond">
+                <h2>Savings Bonds</h2>
+                <p>Savings bonds are government-backed and very safe investments for individuals.</p>
+                <div class="content">
+                    <p><span class="cagr">CAGR:</span> 1-3% over the past 5 years (2018-2023)</p>
+                    <p><span class="risk">Risk:</span> Very low</p>
+                    <p class="companies">Examples:
+                        <br>Series I Savings Bonds - <span class="cagr">CAGR:</span> 2.0%, <span class="risk">Risk:</span> Very low
+                        <br>Series EE Savings Bonds - <span class="cagr">CAGR:</span> 1.5%, <span class="risk">Risk:</span> Very low
+                    </p>
+                </div>
+            </div>
+            <div class="bond investment-grade-bond">
+                <h2>Investment Grade Bonds</h2>
+                <p>Investment grade bonds are high-quality bonds with low default risk.</p>
+                <div class="content">
+                    <p><span class="cagr">CAGR:</span> 3-5% over the past 5 years (2018-2023)</p>
+                    <p><span class="risk">Risk:</span> Low</p>
+                    <p class="companies">Examples:
+                        <br>Johnson & Johnson Bonds - <span class="cagr">CAGR:</span> 4.2%, <span class="risk">Risk:</span> Low
+                        <br>Procter & Gamble Bonds - <span class="cagr">CAGR:</span> 4.1%, <span class="risk">Risk:</span> Low
+                    </p>
+                </div>
+            </div>
+            <div class="bond junk-bond">
+                <h2>Junk Bonds</h2>
+                <p>Junk bonds offer high returns but come with higher risk of default.</p>
+                <div class="content">
+                    <p><span class="cagr">CAGR:</span> 6-8% over the past 5 years (2018-2023)</p>
+                    <p><span class="risk">Risk:</span> High</p>
+                    <p class="companies">Examples:
+                        <br>Ford Motor Company Bonds - <span class="cagr">CAGR:</span> 7.0%, <span class="risk">Risk:</span> High
+                        <br>Delta Air Lines Bonds - <span class="cagr">CAGR:</span> 6.8%, <span class="risk">Risk:</span> High
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Hide the preloader after 5 seconds
+        window.addEventListener('load', function () {
+          setTimeout(function () {
+            document.getElementById('preloader').style.display = 'none';
+          }, 1000); // 5000ms = 5s
+        });
+      </script>
+</body>
+</html>
